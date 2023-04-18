@@ -13,7 +13,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- custom css -->
+    <!-- css -->
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -29,15 +29,16 @@
         </span>
       </div>
       <ul class="nav-items">
-        <li><a href="index.html" class="nav-link">home</a></li>
-        <li><a href="skills.html" class="nav-link">skills</a></li>
+        <li><a href="#home" class="nav-link">home</a></li>
+        <li><a href="#skill" class="nav-link">skills</a></li>
         <li><a href="about.html" class="nav-link">about</a></li>
-        <li><a href="products.html" class="nav-link">products</a></li>
+        <li><a href="#products" class="nav-link">products</a></li>
+        <li><a href="#services" class="nav-link">services</a></li>
       </ul>
     </nav>
     <!-- end of navbar -->
     <!-- header -->
-    <header class="header">
+    <header class="header" id="home">
       <div class="banner">
         <h2>Over one hundred flavors of</h2>
         <h1>
@@ -45,7 +46,7 @@
           <br />
           crafted tea
         </h1>
-        <a href="./skills.html" class="btn banner-btn">Explore</a>
+        <a href="#" class="btn banner-btn">Explore</a>
       </div>
     </header>
     <!-- and of header -->
@@ -53,7 +54,7 @@
     <!-- skills section -->
     <section class="skills clearfix">
       <!-- single skill - mug -->
-      <article class="skill">
+      <article class="skill" id="skill">
         <span class="skill-icon">
           <i class="fas fa-mug-hot"></i>
         </span>
@@ -133,7 +134,7 @@
     </section>
     <!-- end of about -->
     <!-- products -->
-    <section class="products">
+    <section class="products" id="products">
       <div class="section-center clearfix">
         <!-- products info -->
         <article class="products-info">
@@ -148,14 +149,14 @@
             nesciunt quaerat voluptatibus sit temporibus, deserunt facilis
             doloribus tempora maxime alias natus neque reiciendis eaque nam?
           </p>
-          <a href="products.html" class="btn">inventory</a>
+          <a href="#" class="btn">inventory</a>
         </article>
         <!-- products inverntory -->
         <article class="products-inventory">
           <!-- single product -->
           <div class="product" id="first-product">
             <img
-              src="./images/product-22.jpg"
+              src="./images/product-1.jpg"
               alt="lavender tea"
               class="product-img"
             />
@@ -168,7 +169,7 @@
           <!-- single product -->
           <div class="product" id="second-product">
             <img
-              src="./images/product-11.jpg"
+              src="./images/product-2.jpg"
               alt="lavender tea"
               class="product-img"
             />
@@ -181,7 +182,7 @@
           <!-- single product -->
           <div class="product" id="last-product">
             <img
-              src="./images/about-bcg.jpg"
+              src="./images/card-3.jpg"
               alt="lavender tea"
               class="product-img"
             />
@@ -196,7 +197,7 @@
     </section>
     <!-- end of products -->
     <!-- services -->
-    <section class="services">
+    <section class="services" id="services">
       <!-- section title -->
       <div class="section-title services-title">
         <h3>explore</h3>
@@ -209,7 +210,7 @@
           <div class="service-img-container">
             <!-- img -->
             <img
-              src="./images/products-5.jpg"
+              src="./images/card-1.jpg"
               class="service-img"
               alt="service image"
             />
@@ -226,7 +227,7 @@
               distinctio laboriosam ipsam vitae, accusantium odit voluptatibus
               nemo porro dolorem minima.
             </p>
-            <a href="products.html" class="btn service-btn">read more</a>
+            <a href="#" class="btn service-btn">read more</a>
           </div>
         </article>
         <!-- end of single card one  -->
@@ -235,7 +236,7 @@
           <div class="service-img-container">
             <!-- img -->
             <img
-              src="./images/product-44.jpg"
+              src="./images/card-2.jpg"
               class="service-img"
               alt="service image"
             />
@@ -252,7 +253,7 @@
               distinctio laboriosam ipsam vitae, accusantium odit voluptatibus
               nemo porro dolorem minima.
             </p>
-            <a href="products.html" class="btn service-btn">read more</a>
+            <a href="#" class="btn service-btn">read more</a>
           </div>
         </article>
         <!-- end of single card two -->
@@ -261,7 +262,7 @@
           <div class="service-img-container">
             <!-- img -->
             <img
-              src="./images/product-33.jpg"
+              src="./images/card-3.jpg"
               class="service-img"
               alt="service image"
             />
@@ -278,7 +279,7 @@
               distinctio laboriosam ipsam vitae, accusantium odit voluptatibus
               nemo porro dolorem minima.
             </p>
-            <a href="products.html" class="btn service-btn">read more</a>
+            <a href="#" class="btn service-btn">read more</a>
           </div>
         </article>
         <!-- end of single card three -->
@@ -330,7 +331,7 @@
         <!-- contact form -->
         <article class="contact-form">
           <h3>contact us</h3>
-          <form action="">
+          <form action="https://formspree.io/f/xknakggp" method="POST">
             <div class="form-group">
               <!-- inputs -->
               <input
@@ -374,12 +375,13 @@
             <i class="fab fa-instagram"> </i>
           </a>
         </div>
+
+        <h4 class="footer-text">
+          &copy;<span id="date"></span>
+          <span class="company">tea station</span>
+          all rights reserved
+        </h4>
       </div>
-      <h4 class="footer-text">
-        &copy;<span id="date"></span>
-        <span class="company">tea station</span>
-        all rights reserved
-      </h4>
     </footer>
     <!-- end of footer -->
     <!-- js -->

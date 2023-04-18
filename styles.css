@@ -163,6 +163,7 @@ p {
   color: var(--clr-primary-light);
   white-space: nowrap;
   /* animation */
+  animation: slide-from-right 5s ease-in-out 1;
 }
 .banner h1 {
   text-transform: uppercase;
@@ -170,11 +171,13 @@ p {
   margin-top: 1.25rem;
   margin-bottom: 2rem;
   /* animation */
+  animation: slide-from-left 5s ease-in-out 1;
 }
 .banner-btn {
   outline: 0.125rem solid var(--clr-primary);
   outline-offset: 0.25rem;
   padding: 1rem 1.75rem;
+  animation: btn-show 5s ease-in-out 1;
 }
 .banner-btn:hover {
   outline-color: var(--clr-primary-light);
@@ -516,7 +519,10 @@ p {
   font-size: 2rem;
   color: var(--clr-primary);
   cursor: pointer;
-  /* animation: bounce 2s ease infinite; */
+  animation: btn-bounce 2s ease-in infinite;
+}
+.nav-btn:hover {
+  color: var(--clr-primary-light);
 }
 /* navbar */
 .navbar {
@@ -528,9 +534,12 @@ p {
   background: var(--clr-grey-10);
   z-index: 2;
   box-shadow: 2px 0 2px rgba(0, 0, 0, 0.2);
+  transition: var(--transition);
   /* hide navbar */
+  transform: translateX(-100%);
 }
 .showNav {
+  transform: translateX(0);
 }
 .navbar-header {
   text-align: right;
@@ -568,6 +577,80 @@ p {
     width: 35vw;
   }
 }
+
 /* ------------------------------ */
-/* ***** STYLES ***** */
+/* ***** ANIMATION ***** */
+/* ------------------------------ */
+@keyframes btn-bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes slide-from-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-200px);
+    opacity: 0.5;
+  }
+  70% {
+    transform: translateX(50px);
+    opacity: 0.8;
+  }
+  85% {
+    transform: translateX(-70px);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-from-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(200px);
+    opacity: 0.5;
+  }
+  70% {
+    transform: translateX(-50px);
+    opacity: 0.8;
+  }
+  85% {
+    transform: translateX(70px);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes btn-show {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ------------------------------ */
+/* ***** >---< ***** */
 /* ------------------------------ */
