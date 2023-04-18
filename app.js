@@ -2,6 +2,7 @@
 const date = (document.getElementById('date').innerHTML =
   new Date().getFullYear());
 
+const yurek = date;
 // // setup nav
 // const navBtn = document.getElementById('nav-btn');
 // const navbar = document.getElementById('navbar');
