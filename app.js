@@ -3,6 +3,7 @@ const date = (document.getElementById('date').innerHTML =
   new Date().getFullYear());
 
 const yurek = date;
+const nasya = 'masyasya';
 // // setup nav
 // const navBtn = document.getElementById('nav-btn');
 // const navbar = document.getElementById('navbar');
